@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 html,
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f1f1f1;
   margin: 0;
   padding: 0;
@@ -68,7 +70,13 @@ a {
   color: #000;
   font-weight: bold;
 }
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
 
+}
 .container {
   background-color: antiquewhite;
   max-width: 1200px;
@@ -99,6 +107,8 @@ a {
   color: #2901dd;
   font-size: 20px;
   font-weight: bold;
+  margin: 30px , 0px , 30px , 0;
+
 }
 
 .desc #bgn {
@@ -159,4 +169,102 @@ a {
   display: flex;
   padding-left: 40%;
   padding-right: 40%;
+}
+
+.arrow {
+  position: fixed;
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+  font-size: 30px;
+  border: 2px solid orange;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow:focus {
+  outline: 0;
+}
+
+.left-arrow {
+  left: calc(15vw - 65px);
+}
+
+.right-arrow {
+  right: calc(15vw - 65px);
+}
+
+
+.carousel-container {
+  margin: 0px -24px;
+  padding: 0px 22px;
+  overflow: hidden;
+}
+
+.external-buttons {
+  overflow: visible;
+  
+  .swiper-button-prev, &.swiper-container-rtl .swiper-button-next {
+      left: -16px;
+      right: auto;
+  
+  }
+
+  .swiper-button-next, &.swiper-container-rtl .swiper-button-prev {
+      right: -16px;
+      left: auto;
+  }
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top: 45%;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 50%;
+  color: blue;
+  font-weight: 700;
+  outline: 0;
+  transition: background-color .2s ease, color .2s ease;
+  
+  &::after {
+      font-size: 16px;
+  }
+}
+
+.swiper-button-prev {
+  &:after {
+      position: relative;
+      left: -1px;
+  }
+}
+
+.swiper-button-next {
+  &:after {
+      position: relative;
+      left: 1px;
+  }
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.image {
+  width: 100%;
+  height: auto;
 }

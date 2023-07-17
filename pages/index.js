@@ -37,7 +37,7 @@ export default function Home() {
     <div class="image1">
       <img src="https://mobistatic1.focus.bg/mobile/photosmob/703/1/big1/11687953711836703_bO.jpg"/>
       <div class="info">
-       <a class="link" href="https://www.mobile.bg/pcgi/mobile.cgi?act=4&adv=11687953711836703">VW New beetle 2.0TSI</a>
+       <a class="link" href="/vw">VW New beetle 2.0TSI</a>
         <p class="price">49 999лв</p>
       </div>
     </div>
