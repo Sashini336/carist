@@ -31,6 +31,7 @@ export default function CarVw(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+      <a id="home" class='link' href="/">Home</a>
         <div class="container">
           <h3 class="title">{data.title}</h3>
           <div className="carousel-container">

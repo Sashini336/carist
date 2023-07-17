@@ -20,12 +20,10 @@ export default function CarVw(props) {
     eco: "Евро 6",
     millage: "16000 км",
     color: "Бежов",
-    moreInfo: `Автокъща MAXXTRADE предлага за своите клиенти, лизинг без
-    доказване на доход и одобрение в рамките на деня. Съдействие за
+    moreInfo: `Съдействие за
     регистрация в КАТ, както и изкупуване на всякакви автомобили.
     Автомобилът е регистриран. Платени документи. В безупречно
-    техническо и визуално състояние. Всички екстри за модела.
-    Оригинален AMG оптик. 4 матик. Възможен бартер и лизинг.`,
+    техническо и визуално състояние. Всички екстри за модела.Възможен бартер и лизинг.`,
   };
   return (
     <div>
@@ -35,6 +33,9 @@ export default function CarVw(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <a id="home" class="link" href="/">
+          Home
+        </a>
         <div class="container">
           <h3 class="title">{data.title}</h3>
           <div className="carousel-container">

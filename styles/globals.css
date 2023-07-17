@@ -18,7 +18,7 @@ a {
 }
 
 
-.search .bar{
+.searchBar #search{
   display:flex;
   flex-direction: row;
   justify-content: center;
@@ -191,4 +191,13 @@ a {
 
 .the-info {
   font-size: 17px;
+}
+
+#home {
+  display:flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding-left: 50px;
+  color:#1a17b4;
+  font-size: 20px;
 }
